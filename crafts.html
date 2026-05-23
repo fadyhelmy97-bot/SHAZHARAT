@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شذرات - الحرف اليدوية</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        html {
+            scroll-behavior: smooth; 
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #fcfbfa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .crafts-page-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-title {
+            color: #0b2b1a;
+            font-size: 2.6rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .title-divider {
+            width: 120px;
+            height: 4px;
+            background-color: #d4a373;
+            margin: 0 auto 25px auto;
+            border-radius: 2px;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #444;
+            background-color: #f5f2eb;
+            padding: 25px;
+            border-right: 5px solid #0b2b1a;
+            border-radius: 8px;
+            margin-bottom: 50px;
+        }
+
+        .craft-detail-section {
+            background: #ffffff;
+            border: 1px solid #eae6df;
+            border-radius: 12px;
+            padding: 35px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+            transition: transform 0.3s ease;
+        }
+
+        .craft-detail-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .craft-title {
+            color: #0b2b1a;
+            font-size: 1.9rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 2px solid #f5f2eb;
+            padding-bottom: 10px;
+        }
+
+        .craft-subtitle {
+            color: #d4a373;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .craft-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .info-box {
+            background-color: #faf9f6;
+            border: 1px dashed #d4a373;
+            border-radius: 8px;
+            padding: 20px 25px;
+        }
+
+        .info-box h4 {
+            margin-top: 0;
+            color: #0b2b1a;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+        }
+
+        .info-list li {
+            font-size: 1rem;
+            color: #444;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">شذرات</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">الرئيسية</a>
+            <a href="index.html#aboutModal">عن شذرات</a>
+            <a href="crafts.html" class="active">الحرف اليدوية</a>
+            <a href="index.html#places-section">المناطق الأثرية</a>
+            <a href="#">تواصل معنا</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </header>
+
+    <main class="crafts-page-container">
+        
+        <div class="page-header">
+            <h1 class="page-title">🛠️ الحرف اليدوية المصرية</h1>
+            <div class="title-divider"></div>
+        </div>
+
+        <p class="intro-text">
+            تمثل الحرف اليدوية في مصر شواهد حيّة على عظمة الإنسان المصري وقدرته على طوع الخامات البسيطة ليصنع منها فنوناً أبهرت العالم على مر العصور. من خلال هذه الصفحة، نستعرض أبرز الحرف التراثية التي وثقتها حملة <strong>شذرات</strong> للحفاظ عليها من الاندثار.
+        </p>
+
+        <section id="khayamiya-section" class="craft-detail-section">
+            <h2 class="craft-title">🧵 الخيامية</h2>
+            <div class="craft-subtitle">✨ نبذة عن الحرفة:</div>
+            <p class="craft-description">
+                تُعد الخيامية واحدة من أعرق الحرف التراثية المصرية التي ارتبطت بالهوية الشعبية والفنون الإسلامية منذ مئات السنين. تعتمد هذه الحرفة على تطريز وتنسيق قطع القماش الملونة يدويًا لتكوين زخارف هندسية ونباتية مميزة تعكس روح الفن المصري القديم والإسلامي. كانت تستخدم قديمًا في صناعة السرادقات والخيام الخاصة بالمناسبات والاحتفالات الشعبية والدينية، ومن هنا جاء اسم “الخيامية”.
+                <br><br>
+                رغم التطور الصناعي، ما زال الحرفيون يحافظون على هذه المهنة باستخدام الأدوات اليدوية التقليدية التي تحتاج إلى دقة وصبر وإبداع كبير. وتتميز منتجات الخيامية بالألوان الزاهية والنقوش التراثية التي تمنحها طابعًا فنيًا فريدًا يجعلها من أشهر الصناعات اليدوية في مصر.
+            </p>
+            <div class="info-box">
+                <h4>📌 معلومات إضافية:</h4>
+                <ul class="info-list">
+                    <li>📍 <strong>أشهر أماكنها:</strong> شارع الخيامية بالقاهرة التاريخية</li>
+                    <li>🪡 <strong>طبيعة العمل:</strong> تعتمد بالكامل على العمل اليدوي</li>
+                    <li>🎨 <strong>الهام التصميم:</strong> مستوحاة من الفن الإسلامي والزخارف الفرعونية</li>
+                    <li>🧵 <strong>الاستخدامات:</strong> تستخدم في صناعة المفارش واللوحات والديكورات</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="weaving-section" class="craft-detail-section">
+            <h2 class="craft-title">🧶 النسيج اليدوي</h2>
+            <div class="craft-subtitle">✨ نبذة عن الحرفة:</div>
+            <p class="craft-description">
+                يُعتبر النسيج اليدوي من أقدم الصناعات التي عرفها الإنسان، حيث اعتمد المصريون القدماء على الأنوال اليدوية في صناعة الملابس والأقمشة. وتتمد هذه الحرفة على تحويل الخيوط القطنية أو الصوفية إلى منتجات مميزة من خلال النول اليدوي الذي يحتاج إلى مهارة ودقة عالية.
+                <br><br>
+                ويتميز النسيج اليدوي المصري بتنوع ألوانه ونقوشه التي تعكس الثقافة الشعبية والتراث المحلي لكل محافظة. كما أن كل قطعة يتم تصنيعها يدويًا تكون فريدة من نوعها وتحمل لمسة خاصة من الحرفي الذي قام بصناعتها. وتُستخدم منتجات النسيج اليدوي في صناعة السجاد والمفروشات والملابس التراثية والديكورات المنزلية.
+            </p>
+            <div class="info-box">
+                <h4>📌 معلومات إضافية:</h4>
+                <ul class="info-list">
+                    <li>🧵 <strong>التقنية:</strong> تعتمد على الأنوال التقليدية</li>
+                    <li>📍 <strong>من أشهر مراكزه:</strong> أخميم والفيوم</li>
+                    <li>👘 <strong>الاستخدامات:</strong> يستخدم في صناعة الملابس والمفروشات</li>
+                    <li>✨ <strong>المميزات:</strong> يتميز بجودة الخامات والألوان التراثية</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="copper-section" class="craft-detail-section">
+            <h2 class="craft-title">🪙 النحاس</h2>
+            <div class="craft-subtitle">✨ نبذة عن الحرفة:</div>
+            <p class="craft-description">
+                تُعد صناعة النحاس من الحرف اليدوية العريقة التي اشتهرت بها مصر منذ العصور الإسلامية، حيث برع الحرفيون في تشكيل النحاس وصناعة الأواني والتحف المزخرفة يدويًا. تعتمد هذه الحرفة على النقش والحفر باستخدام أدوات دقيقة لإنتاج قطع فنية تحمل تفاصيل وزخارف تراثية مميزة.
+                <br><br>
+                وكانت المنتجات النحاسية جزءًا أساسيًا من البيوت المصرية قديمًا، إذ استخدمت في الأواني المنزلية والفوانيس والزينة. وحتى اليوم ما زالت هذه الحرفة تحافظ على قيمتها الفنية والتراثية, خاصة في الأماكن التاريخية مثل خان الخليلي، حيث يجذب بريق النحاس المنقوش الزوار من مختلف أنحاء العالم.
+            </p>
+            <div class="info-box">
+                <h4>📌 معلومات إضافية:</h4>
+                <ul class="info-list">
+                    <li>🔨 <strong>التقنية:</strong> تعتمد على الحفر والنقش اليدوي</li>
+                    <li>🏺 <strong>المنتجات:</strong> تستخدم في صناعة التحف والأواني</li>
+                    <li>📍 <strong>أشهر أماكنها:</strong> خان الخليلي</li>
+                    <li>✨ <strong>المميزات:</strong> تتميز بالزخارف الإسلامية الدقيقة</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="pottery-section" class="craft-detail-section">
+            <h2 class="craft-title">🏺 الفخار</h2>
+            <div class="craft-subtitle">✨ نبذة عن الحرفة:</div>
+            <p class="craft-description">
+                تُعتبر صناعة الفخار من أقدم الحرف التي عرفتها الحضارات الإنسانية، وقد تميز المصري القديم باستخدام الطين في صناعة الأواني والأدوات اليومية. تبدأ هذه الحرفة بتشكيل الطين يدويًا أو باستخدام دولاب الفخار، ثم يتم تجفيفه وحرقه داخل أفران خاصة ليصبح أكثر صلابة ومتانة.
+                <br><br>
+                ويمثل الفخار جزءًا مهمًا من التراث المصري، حيث يجمع بين الجانب العملي والفني في الوقت نفسه. وتتنوع المنتجات الفخارية بين الأواني المنزلية والتحف الفنية والزخارف التراثية التي تحمل طابعًا شعبيًا أصيلًا. كما تشتهر بعض المناطق المصرية مثل الفسطاط وأسوان بهذه الصناعة التي ما زالت مستمرة حتى اليوم.
+            </p>
+            <div class="info-box">
+                <h4>📌 معلومات إضافية:</h4>
+                <ul class="info-list">
+                    <li>🌾 <strong>المادة الأساسية:</strong> الطين الطبيعي</li>
+                    <li>🔥 <strong>التصنيع:</strong> يُحرق داخل أفران خاصة</li>
+                    <li>🏺 <strong>الاستخدام:</strong> يستخدم للزينة والاستخدام اليومي</li>
+                    <li>📍 <strong>من أشهر مناطقه:</strong> الفسطاط وأسوان</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3 class="footer-logo">شذرات</h3>
+                <p>منصة تهتم بالتراث المصري الأصيل؛ حرف، أماكن، وقصص من الماضي إلى الحاضر.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#aboutModal">عن شذرات</a></li>
+                    <li><a href="#">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>الحرف اليدوية</h4>
+                <ul>
+                    <li><a href="crafts.html#khayamiya-section">الخيامية</a></li>
+                    <li><a href="crafts.html#weaving-section">النسيج اليدوي</a></li>
+                    <li><a href="crafts.html#copper-section">النحاس</a></li>
+                    <li><a href="crafts.html#pottery-section">الفخار</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>المناطق الأثرية</h4>
+                <ul>
+                    <li><a href="luxor.html">الأقصر</a></li>
+                    <li><a href="cairo.html">القاهرة</a></li>
+                    <li><a href="aswan.html">أسوان</a></li>
+                    <li><a href="fayoum.html">الفيوم</a></li>
+                    <li><a href="portsaid.html">بورسعيد</a></li>
+                    <li><a href="alexandria.html">الإسكندرية</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>حقوق النشر © 2026 شذرات - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script>
+        // كود تشغيل القائمة للموبايل في صفحة الحرف
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.onclick = function() {
+            navLinks.classList.toggle("open");
+        }
+    </script>
+
+</body>
+</html>
