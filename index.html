@@ -74,6 +74,19 @@
         <button class="menu-toggle" id="menuToggle">☰</button>
     </header>
 
+    <!-- أيقونات السوشيال الجانبية -->
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/profile.php?id=61587742401086&mibextid=wwXIfr&rdid=8DJfgrWM0STw298u&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1F2NFBipRy%2F%3Fmibextid%3DwwXIfr#" target="_blank" title="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/project.x56?igsh=MW95ZDBvMW1obDUzbQ%3D%3De" target="_blank" title="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@projectx430?_r=1&_t=ZS-94bt00Vonp9" target="_blank" title="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.2 8.2 0 0 0 4.78 1.52V6.82a4.85 4.85 0 0 1-1.01-.13z"/></svg>
+        </a>
+    </div>
+
     <!-- الهيرو -->
     <section class="hero-section">
         <div class="hero-content">
@@ -87,22 +100,24 @@
     </section>
 
     <!-- شريط التصنيفات -->
-    <section class="quick-categories">
-        <a href="arts-culture.html" class="category-item" style="text-decoration:none;color:inherit;">
-            <span class="category-icon">🎭</span>
-            <p>فنون وثقافات</p>
-        </a>
-        <div class="category-item">
-            <span class="category-icon">🏛️</span>
-            <p>أماكن تحكي التاريخ</p>
-        </div>
-        <div class="category-item">
-            <span class="category-icon">📖</span>
-            <p>قصص من الماضي</p>
-        </div>
-        <div class="category-item">
-            <span class="category-icon">👥</span>
-            <p>هوية واحدة.. شعب واحد</p>
+    <section class="quick-categories-wrapper">
+        <div class="quick-categories">
+            <a href="index.html#places-section" class="category-item" style="text-decoration:none;">
+                <span class="category-icon">👨‍👩‍👧‍👦</span>
+                <p>هوية واحدة.. شعب واحد</p>
+            </a>
+            <a href="index.html#places-section" class="category-item" style="text-decoration:none;">
+                <span class="category-icon">🏛️</span>
+                <p>أماكن تحكي التاريخ</p>
+            </a>
+            <a href="crafts.html" class="category-item" style="text-decoration:none;">
+                <span class="category-icon">🪡</span>
+                <p>حرف أبدعو صناعها</p>
+            </a>
+            <a href="arts-culture.html" class="category-item" style="text-decoration:none;">
+                <span class="category-icon">🏆</span>
+                <p>تراث أصيل</p>
+            </a>
         </div>
     </section>
 
@@ -199,10 +214,48 @@
 
         <!-- القصة المميزة -->
         <div class="featured-story">
-            <h3>من الفراعنة لأولى ناس احتفلوا بعيد الربيع</h3>
-            <p>من زمان أوي الفراعنة كانوا يحتفلوا بالربيع. بالـنانو و كانوا بسموه "شموش" يعني عيد الحياة</p>
-            <a href="#" class="btn-story">اقرأ القصة</a>
+            <h3>الفراعنة.. أول من احتفل بعيد الربيع</h3>
+            <p>منذ فجر التاريخ، احتفل المصريون القدماء بقدوم الربيع، وكانوا يسمونه "شمو".. أي عيد الحياة.</p>
+            <button onclick="document.getElementById('storyModal').style.display='block'" class="btn-story">اقرأ القصة</button>
         </div>
+    </section>
+
+    <!-- مودال القصة -->
+    <div id="storyModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7); backdrop-filter:blur(5px); overflow-y:auto;">
+        <div style="background:#fcfbfa; margin:4% auto; padding:40px; border-radius:14px; width:85%; max-width:800px; text-align:right; position:relative; line-height:2; box-shadow:0 10px 40px rgba(0,0,0,0.3); animation:fadeIn 0.4s ease-out;">
+            <span onclick="document.getElementById('storyModal').style.display='none'" style="position:absolute; top:15px; left:20px; font-size:30px; cursor:pointer; color:#aaa; font-weight:bold; transition:color 0.2s;" onmouseover="this.style.color='#b94a24'" onmouseout="this.style.color='#aaa'">&times;</span>
+
+            <div style="border-bottom:2px solid #d4a373; padding-bottom:15px; margin-bottom:25px;">
+                <span style="background:#b94a24; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; letter-spacing:1px;">📜 قصص من الماضي</span>
+                <h2 style="color:#0b2b1a; font-size:1.7rem; margin-top:12px; font-family:'Cairo', sans-serif; font-weight:700;">حكاية من قلب التاريخ: سر "شِمو" وعيد الحياة</h2>
+            </div>
+
+            <p style="color:#333; font-size:1.05rem; margin-bottom:20px;">في أحضان النيل الخالد، وبين جدران المعابد الشامخة التي تتحدى الزمن، بدأت القصة. لم يكن الربيع عند أجدادنا الفراعنة مجرد فصلٍ تتفتح فيه الزهور، بل كان "عيد الحياة" وبعث الأرض من جديد.</p>
+
+            <h3 style="color:#0b2b1a; font-size:1.2rem; margin-bottom:10px;">🌅 شروق شمس الربيع</h3>
+            <p style="color:#444; font-size:1rem; margin-bottom:15px;">منذ آلاف السنين، ومع أول شعاع دافئ يكسر برودة الشتاء، كان المصري القديم يتطلع إلى السماء بلهفة؛ ففي هذا اليوم تحديداً يتساوى الليل والنهار، لتعلن الطبيعة عن انطلاق احتفال مهيب أطلقوا عليه اسم <strong>"شِمو"</strong> (أي تجدد الحياة).</p>
+            <p style="color:#444; font-size:1rem; margin-bottom:25px;">كانت البيوت تتزين بسعف النخيل، والقلوب تمتلئ بالبهجة، حيث يخرج الصغار والكبار إلى ضفاف النيل الساحر، لتتدفق المياه محملة بالخير، وتجري الشلالات بين الصخور لتغسل هموم العام الماضي.</p>
+
+            <h3 style="color:#0b2b1a; font-size:1.2rem; margin-bottom:15px;">🎉 طقوس مبهجة ممتدة عبر الزمن</h3>
+            <div style="background:#f5f2eb; border-radius:10px; padding:20px; margin-bottom:25px;">
+                <p style="color:#444; font-size:1rem; margin-bottom:12px;">لم تكن المظاهر تختلف كثيراً عما نعيشه اليوم، فالحياة تولد من جديد في كل تفصيلة:</p>
+                <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:10px;">
+                    <li style="color:#333; font-size:1rem; display:flex; gap:8px; align-items:flex-start;"><span style="color:#b94a24; font-weight:bold; margin-top:2px;">◈</span><span><strong>البيض الملون:</strong> كان رمزاً لخلق الحياة من جماد، يلونونه ويزينونه بأمنياتهم، ثم يرفعونه في سلال من الخوص لتتحقق مع شروق الشمس.</span></li>
+                    <li style="color:#333; font-size:1rem; display:flex; gap:8px; align-items:flex-start;"><span style="color:#b94a24; font-weight:bold; margin-top:2px;">◈</span><span><strong>البصل الأخضر والخس:</strong> يمثلان التجدد، والخصوبة، وصحة الجسد.</span></li>
+                    <li style="color:#333; font-size:1rem; display:flex; gap:8px; align-items:flex-start;"><span style="color:#b94a24; font-weight:bold; margin-top:2px;">◈</span><span><strong>الأسماك المملحة:</strong> تعبيراً عن حبهم للنيل وعطائه المستمر.</span></li>
+                </ul>
+            </div>
+
+            <h3 style="color:#0b2b1a; font-size:1.2rem; margin-bottom:10px;">🏛️ إرث لا يموت</h3>
+            <p style="color:#444; font-size:1rem; margin-bottom:20px;">مرت القرون، وتغيرت اللغات والعصور، فتحولت "شِمو" الفرعونية بمرور الوقت إلى <strong>"شم النسيم"</strong> الذي نحتفل به حتى يومنا هذا، لكن الجوهر ظل ثابتاً: تجمع العائلة، الضحكات التي تملأ الحدائق، والاحتفاء بجمال الطبيعة وأمل البدايات الجديدة.</p>
+
+            <div style="background:#e6edd9; padding:15px 20px; border-radius:8px; border-right:4px solid #0b2b1a;">
+                <p style="color:#0b2b1a; font-size:1rem; font-weight:700; margin:0;">✨ إنها ليست مجرد نزهة، بل هي جينات ممتدة تربطنا بأولئك الذين نحتوا الصخر وصنعوا التاريخ، واحتفلوا بالحياة قبل أي شعب آخر على وجه الأرض.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- باقي الصفحة بعد السكشن بتاع القصص -->
     </section>
 
     <!-- أماكن تحكي التاريخ -->
@@ -284,6 +337,9 @@
         <div class="footer-bottom">
             <p>حقوق النشر © 2026 شذرات - جميع الحقوق محفوظة</p>
         </div>
+        <div class="footer-university">
+            <p>مشروع تخرج كلية الإعلام - جامعة بني سويف</p>
+        </div>
     </footer>
 
     <script>
@@ -300,7 +356,10 @@
         btnHeader.onclick = function() { modal.style.display = "block"; }
         btnFooter.onclick = function() { modal.style.display = "block"; }
         closeBtn.onclick = function() { modal.style.display = "none"; }
-        window.onclick = function(event) { if (event.target == modal) modal.style.display = "none"; }
+        window.onclick = function(event) {
+            if (event.target == modal) modal.style.display = "none";
+            if (event.target == document.getElementById("storyModal")) document.getElementById("storyModal").style.display = "none";
+        }
 
         // السلايدر
         const track = document.getElementById("craftsTrack");
